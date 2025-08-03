@@ -30,13 +30,13 @@ The script performs the following actions:
 5.  Checks for available disk space and stops if it's less than 1GB.
 6.  Logs all created files and folders in `part1.log`.
 
-[Screenshot of the script in action]
+[Screenshot of the script in action]  
 ![Part 1 Script](./images/part1_script.png)
 
-[Screenshot of the generated files and folders]
+[Screenshot of the generated files and folders]  
 ![Part 1 Files](./images/part1_files.png)
 
-[Screenshot of the log file]
+[Screenshot of the log file]  
 ![Part 1 Log](./images/part1_log.png)
 
 ## Part 2: File system clogging
@@ -67,10 +67,10 @@ The script performs the following actions:
 5.  Logs all created files and folders in `part2.log`.
 6.  Records the start and end time of the script and calculates the total execution time.
 
-[Screenshot of the script in action]
+[Screenshot of the script in action]  
 ![Part 2 Script](./images/part2_script.png)
 
-[Screenshot of the log file with execution time]
+[Screenshot of the log file with execution time]  
 ![Part 2 Log](./images/part2_log.png)
 
 ## Part 3: Cleaning the file system
@@ -93,13 +93,13 @@ The script supports the following cleaning methods:
 2.  **By creation date and time:** Prompts the user to enter a start and end date/time and deletes all files created within that interval.
 3.  **By name mask:** Deletes files and folders based on a name mask (e.g., `ddmmyy_...`).
 
-[Screenshot of the cleaning script in action - Method 1]
+[Screenshot of the cleaning script in action - Method 1]  
 ![Part 3 Script Method 1](./images/part3_script_1.png)
 
-[Screenshot of the cleaning script in action - Method 2]
+[Screenshot of the cleaning script in action - Method 2]  
 ![Part 3 Script Method 2](./images/part3_script_2.png)
 
-[Screenshot of the cleaning script in action - Method 3]
+[Screenshot of the cleaning script in action - Method 3]  
 ![Part 3 Script Method 3](./images/part3_script_3.png)
 
 ## Part 4: Log generator
@@ -120,7 +120,7 @@ The script generates 5 log files (`access_YYYY-MM-DD.log`) with the following ra
 *   Request URL
 *   User-Agent
 
-[Screenshot of the generated log files]
+[Screenshot of the generated log files]  
 ![Part 4 Logs](./images/part4_logs.png)
 
 ## Part 5: Monitoring
@@ -144,16 +144,16 @@ The script provides the following information:
 3.  All requests with errors (4xx or 5xx response codes).
 4.  All unique IPs from erroneous requests.
 
-[Screenshot of the script output - Option 1]
+[Screenshot of the script output - Option 1]  
 ![Part 5 Script 1](./images/part5_script_1.png)
 
-[Screenshot of the script output - Option 2]
+[Screenshot of the script output - Option 2]  
 ![Part 5 Script 2](./images/part5_script_2.png)
 
-[Screenshot of the script output - Option 3]
+[Screenshot of the script output - Option 3]  
 ![Part 5 Script 3](./images/part5_script_3.png)
 
-[Screenshot of the script output - Option 4]
+[Screenshot of the script output - Option 4]  
 ![Part 5 Script 4](./images/part5_script_4.png)
 
 ## Part 6: GoAccess
@@ -173,7 +173,7 @@ goaccess access_*.log -o report.html --log-format=COMBINED
 
 The generated `report.html` provides an interactive dashboard to explore the log data.
 
-[Screenshot of the GoAccess HTML report]
+[Screenshot of the GoAccess HTML report]  
 ![Part 6 GoAccess](./images/part6_goaccess.png)
 
 ## Part 7: Prometheus and Grafana
@@ -194,10 +194,10 @@ Install and configure Prometheus and Grafana to monitor system metrics. Create a
 4.  The script from Part 2 was executed to generate load on the system.
 5.  The `stress` utility was used to generate CPU, memory, and I/O load.
 
-[Screenshot of the Prometheus]
+[Screenshot of the Prometheus]  
 ![Part 7 Prometheus](./images/part7_prometheus_endpoints.JPG)
 
-[Screenshot of the Grafana dashboard under load]
+[Screenshot of the Grafana dashboard under load]  
 ![Part 7 Grafana Load](./images/part7_grafana_load.JPG)
 
 ## Part 8: A ready-made dashboard
@@ -212,10 +212,10 @@ Import a pre-built Grafana dashboard and use it to monitor the system under load
 2.  The same load tests from Part 7 were performed.
 3.  `iperf3` was used to generate network load between two virtual machines.
 
-[Screenshot of the iperf3 testing environment]
+[Screenshot of the iperf3 testing environment]  
 ![Part 8 iperf3 Test](./images/part8_iperf3_test.JPG)
 
-[Screenshot of the dashboard under network load]
+[Screenshot of the dashboard under network load]  
 ![Part 8 Grafana Network Load](./images/part8_grafana_network_load.JPG)
 
 ## Part 9: Bonus. Your own node_exporter
