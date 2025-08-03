@@ -233,8 +233,8 @@ Create a custom script to collect basic system metrics (CPU, RAM, disk) and expo
 5.  Prometheus was configured to scrape the metrics from the custom endpoint.
 6.  The same load tests from Part 7 were performed.
 
-[Screenshot of the custom metrics page]
+[Screenshot of the custom metrics page]  
 ![Part 9 Metrics Page](./images/part9_metrics_page.png)
 
-[Screenshot of Grafana with custom metrics]
+[Screenshot of Grafana with custom metrics]  
 ![Part 9 Grafana Load](./images/part9_grafana_load.JPG)
